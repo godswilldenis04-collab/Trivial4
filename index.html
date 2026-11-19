@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,732 +11,417 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1139036022019874');
+fbq('init', '1318329809658768');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1139036022019874&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1318329809658768&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=yes">
-  <title>Quick Challenge | Select Your Gender</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>MTN MEGA DATA · structured rectangular</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      background: #F9F9FC;
-      font-family: system-ui, 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-      line-height: 1.4;
-      color: #1a2c3e;
-      position: relative;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
+        body {
+            background-color: #f2f4f8;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: radial-gradient(#E2E8F0 1px, transparent 1px);
-      background-size: 24px 24px;
-      opacity: 0.4;
-      pointer-events: none;
-      z-index: 0;
-    }
+        .page-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-    body::after {
-      content: "";
-      position: fixed;
-      top: -10%;
-      left: -10%;
-      width: 320px;
-      height: 320px;
-      background: radial-gradient(circle, rgba(245, 166, 35, 0.15) 0%, rgba(230,240,255,0) 70%);
-      border-radius: 50%;
-      filter: blur(60px);
-      pointer-events: none;
-      z-index: 0;
-    }
+        .card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
+            padding: 32px 28px 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #edf0f3;
+        }
 
-    .bg-blur-shape-1 {
-      position: fixed;
-      bottom: -10%;
-      right: -10%;
-      width: 380px;
-      height: 380px;
-      background: radial-gradient(circle, rgba(44, 62, 80, 0.08) 0%, rgba(210,225,245,0) 70%);
-      border-radius: 50%;
-      filter: blur(80px);
-      pointer-events: none;
-      z-index: 0;
-    }
+        .badge-header {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFCC00;
+            border-radius: 6px;
+            padding: 10px 24px;
+            width: fit-content;
+            margin-bottom: 28px;
+            box-shadow: none;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 17px;
+            letter-spacing: 0.6px;
+        }
 
-    .container {
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 16px 20px 32px;
-      position: relative;
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+        .badge-mtn {
+            color: #000000;
+            font-weight: 800;
+        }
 
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 8px 0;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+        .badge-mega {
+            color: #D00000;
+            font-weight: 800;
+            margin-left: 6px;
+        }
 
-    .logo-area {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      padding: 6px 14px 6px 8px;
-      border-radius: 100px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-      border: 1px solid rgba(255,255,255,0.6);
-    }
+        .main-title {
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 1.15;
+            color: #0a0a0a;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            width: 100%;
+        }
 
-    .logo-icon {
-      background: linear-gradient(135deg, #2C3E50, #1A2A3A);
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+        .subtitle-text {
+            font-size: 16px;
+            color: #6b7280;
+            margin-bottom: 32px;
+            font-weight: 400;
+            line-height: 1.5;
+            max-width: 90%;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
 
-    .logo-icon span {
-      font-size: 18px;
-    }
+        .amount-section {
+            margin-bottom: 32px;
+            width: 100%;
+            text-align: left;
+        }
 
-    .logo-text {
-      font-weight: 800;
-      font-size: 1.25rem;
-      letter-spacing: -0.4px;
-      color: #1A2C3E;
-    }
+        .section-label {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 16px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+        }
 
-    .nav-links {
-      display: flex;
-      gap: 14px;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      padding: 8px 16px;
-      border-radius: 60px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-      border: 1px solid rgba(255,255,255,0.6);
-    }
+        .amount-options {
+            display: flex;
+            gap: 12px;
+            justify-content: space-between;
+            width: 100%;
+        }
 
-    .nav-links a {
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.85rem;
-      color: #2C3E50;
-      transition: color 0.2s ease;
-    }
+        .amount-box {
+            flex: 1;
+            background-color: #ffffff;
+            border: 1.8px solid #d1d5db;
+            border-radius: 8px;
+            padding: 16px 5px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e1e1e;
+            cursor: pointer;
+            transition: border 0.1s, background 0.1s;
+            line-height: 1.2;
+            font-family: 'Inter', sans-serif;
+            box-shadow: none;
+        }
 
-    .nav-links a:hover { color: #F5A623; }
+        .amount-box.selected {
+            border-color: #1a1e24;
+            background-color: rgba(255, 204, 0, 0.04);
+            border-width: 2px;
+            font-weight: 700;
+        }
 
-    .layout-spacer {
-      flex: 1;
-      min-height: 60px; 
-    }
+        .cta-button {
+            background-color: #FFCC00;
+            color: #000000;
+            font-weight: 700;
+            font-size: 18px;
+            height: 56px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 8px;
+            transition: background 0.2s;
+            box-shadow: none;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+            border: 1px solid rgba(0,0,0,0.02);
+        }
 
-    .card, .loading-card {
-      background: #FFFFFF;
-      border-radius: 28px;
-      padding: 28px 24px;
-      box-shadow: 0 24px 48px -12px rgba(26, 44, 62, 0.08), 0 1px 3px rgba(0,0,0,0.02);
-      border: 1px solid rgba(0,0,0,0.02);
-      width: 100%;
-      text-align: center;
-    }
+        .cta-button:hover {
+            background-color: #ffd11a;
+            box-shadow: none;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
 
-    .card-title {
-      font-weight: 800;
-      font-size: 1.35rem;
-      margin-bottom: 24px;
-      color: #1A2C3E;
-      border-left: 5px solid #F5A623;
-      padding-left: 14px;
-      text-align: left;
-    }
+        .cta-button:active {
+            transform: scale(0.99);
+        }
 
-    .challenge-sub {
-      font-size: 0.9rem;
-      color: #5A7184;
-      text-align: left;
-      margin-bottom: 20px;
-      font-weight: 500;
-    }
+        .supporting-text {
+            font-size: 13.5px;
+            color: #7e848c;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 16px;
+            line-height: 1.6;
+            font-weight: 400;
+            padding: 0 4px;
+            font-family: 'Inter', sans-serif;
+        }
 
-    .question-text {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #1A2C3E;
-      margin: 20px 0 24px;
-      line-height: 1.3;
-      text-align: center;
-      background: #F8F9FC;
-      padding: 24px 18px;
-      border-radius: 20px;
-      border-left: 4px solid #F5A623;
-    }
+        .disclaimer {
+            font-size: 11.8px;
+            color: #90979e;
+            text-align: center;
+            line-height: 1.55;
+            margin-top: 18px;
+            padding-top: 20px;
+            border-top: 1px solid #e6eaee;
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+        }
 
-    .options-grid {
-      display: flex;
-      flex-direction: row;
-      gap: 16px;
-      margin: 20px 0 28px;
-    }
+        .disclaimer strong {
+            font-weight: 600;
+            color: #6e757c;
+        }
 
-    .option-btn {
-      flex: 1;
-      background: #F8F9FC;
-      border: 1px solid #E9EDF2;
-      padding: 22px 12px;
-      border-radius: 20px;
-      font-weight: 700;
-      font-size: 1.15rem;
-      font-family: inherit;
-      color: #2C3E50;
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      cursor: pointer;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
+        .activity-popup {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 14px 22px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+            display: flex;
+            align-items: center;
+            max-width: calc(100% - 48px);
+            transform: translateX(-420px);
+            opacity: 0;
+            transition: transform 0.35s ease, opacity 0.3s;
+            z-index: 1200;
+            border: 1px solid #e2e6ea;
+            pointer-events: auto;
+            font-family: 'Inter', sans-serif;
+        }
 
-    .option-btn .emoji {
-      font-size: 2rem;
-      line-height: 1;
-    }
+        .activity-popup.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
 
-    .option-btn:hover {
-      background: #F1F3F7;
-      border-color: #CBD5E1;
-    }
+        .success-icon {
+            color: #28a745;
+            font-size: 20px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
 
-    .option-btn.selected {
-      background: linear-gradient(135deg, #1A2C3E, #2C4A6E);
-      color: #FFFFFF;
-      border-color: #1A2C3E;
-      box-shadow: 0 8px 20px -6px rgba(26, 44, 62, 0.3);
-      transform: translateY(-2px);
-    }
+        .activity-message {
+            font-size: 14px;
+            color: #2d2f31;
+            font-weight: 500;
+            line-height: 1.4;
+        }
 
-    .option-btn.selected .emoji {
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
-    }
+        @media (max-width: 450px) {
+            .card {
+                padding: 28px 22px 32px;
+            }
+            .main-title {
+                font-size: 32px;
+            }
+        }
 
-    .proceed-btn {
-      width: 100%;
-      background: linear-gradient(135deg, #FFC107, #F5A623);
-      border: none;
-      padding: 16px 24px;
-      border-radius: 100px;
-      font-weight: 800;
-      font-size: 1.15rem;
-      color: #1A2C3E;
-      font-family: inherit;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 10px 24px -8px rgba(245, 166, 35, 0.4);
-    }
-
-    .proceed-btn:hover {
-      box-shadow: 0 12px 28px -6px rgba(245, 166, 35, 0.5);
-      transform: translateY(-1px);
-    }
-
-    .proceed-btn:active {
-      transform: translateY(1px);
-      box-shadow: 0 6px 14px -5px rgba(245, 166, 35, 0.4);
-    }
-
-    .spinner {
-      width: 44px;
-      height: 44px;
-      border: 4px solid #F0F2F5;
-      border-top: 4px solid #F5A623;
-      border-radius: 50%;
-      margin: 12px auto 20px;
-      animation: spin 0.8s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .loading-text {
-      font-weight: 700;
-      color: #1A2C3E;
-      font-size: 1.1rem;
-      margin-bottom: 6px;
-    }
-
-    .sub-message {
-      font-size: 0.85rem;
-      color: #6B8A9B;
-    }
-
-    .popup-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(13, 22, 30, 0.75);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .popup-overlay.active {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    .popup-card {
-      background: white;
-      max-width: 340px;
-      width: 88%;
-      border-radius: 32px;
-      padding: 36px 24px;
-      text-align: center;
-      box-shadow: 0 32px 64px -16px rgba(0,0,0,0.24);
-      transform: scale(0.9);
-      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .popup-overlay.active .popup-card {
-      transform: scale(1);
-    }
-
-    .check-icon {
-      background: #2ECC71;
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-      font-size: 32px;
-      color: white;
-      box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
-    }
-
-    .popup-card h2 {
-      font-size: 1.7rem;
-      font-weight: 800;
-      margin-bottom: 8px;
-      color: #1A2C3E;
-    }
-
-    .popup-card p {
-      color: #5A7184;
-      margin-bottom: 28px;
-      font-size: 1rem;
-      font-weight: 500;
-    }
-
-    .subscribe-btn {
-      width: 100%;
-      background: linear-gradient(135deg, #FFC107, #F5A623);
-      border: none;
-      padding: 16px 24px;
-      border-radius: 100px;
-      font-weight: 800;
-      font-size: 1.15rem;
-      color: #1A2C3E;
-      font-family: inherit;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 10px 24px -8px rgba(245, 166, 35, 0.4);
-    }
-
-    .subscribe-btn:hover {
-      box-shadow: 0 12px 28px -6px rgba(245, 166, 35, 0.5);
-      transform: translateY(-1px);
-    }
-
-    .subscribe-btn:active {
-      transform: translateY(1px);
-      box-shadow: 0 6px 14px -5px rgba(245, 166, 35, 0.4);
-    }
-
-    .error-msg {
-      margin-top: 14px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #D32F2F;
-      background-color: #FFEBEE;
-      padding: 10px 16px;
-      border-radius: 50px;
-      animation: fadeIn 0.2s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-4px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .hidden { display: none !important; }
-
-    .live-notification-left {
-      position: fixed;
-      left: 12px;
-      bottom: 20px;
-      z-index: 95;
-      max-width: 260px;
-      width: auto;
-      pointer-events: none;
-    }
-
-    .notification-toast {
-      background: rgba(0, 0, 0, 0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-radius: 40px;
-      padding: 6px 14px 6px 10px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-      border-left: 3px solid #F5A623;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 500;
-      font-size: 0.7rem;
-      color: #FFECB3;
-      font-family: 'SF Mono', monospace;
-      transition: all 0.3s ease;
-      opacity: 1;
-      transform: translateX(0);
-      animation: slideInLeftSmall 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-      white-space: nowrap;
-    }
-
-    @keyframes slideInLeftSmall {
-      from {
-        opacity: 0;
-        transform: translateX(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    .pulse-dot-left {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background-color: #2ECC71;
-      border-radius: 50%;
-      flex-shrink: 0;
-      box-shadow: 0 0 4px #2ECC71;
-      animation: pulseGreenSmall 1s infinite;
-    }
-
-    @keyframes pulseGreenSmall {
-      0% { opacity: 0.5; transform: scale(0.7);}
-      100% { opacity: 1; transform: scale(1.1);}
-    }
-
-    .notification-icon {
-      font-size: 0.75rem;
-      flex-shrink: 0;
-    }
-
-    .notification-text {
-      line-height: 1.3;
-      white-space: nowrap;
-      overflow-x: auto;
-      max-width: 180px;
-      font-weight: 500;
-      letter-spacing: 0.2px;
-      font-size: 0.7rem;
-      scrollbar-width: none;
-    }
-    
-    .notification-text::-webkit-scrollbar {
-      display: none;
-    }
-
-    @media (max-width: 560px) {
-      .live-notification-left {
-        left: 8px;
-        bottom: 12px;
-        max-width: 240px;
-      }
-      .notification-toast {
-        padding: 5px 12px 5px 8px;
-        gap: 6px;
-      }
-      .notification-text {
-        font-size: 0.65rem;
-        max-width: 160px;
-      }
-      .notification-icon {
-        font-size: 0.7rem;
-      }
-      .question-text {
-        font-size: 1.3rem;
-        padding: 20px 14px;
-      }
-      .option-btn {
-        padding: 18px 8px;
-        font-size: 1rem;
-      }
-      .option-btn .emoji {
-        font-size: 1.7rem;
-      }
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: #7A8E9B;
-      margin-top: auto;
-      padding-top: 32px;
-    }
-  </style>
+        @media (max-width: 360px) {
+            .main-title {
+                font-size: 30px;
+            }
+            .amount-box {
+                font-size: 17px;
+                padding: 15px 4px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="page-container">
+        <div class="card">
+            <div class="badge-header">
+                <span class="badge-mtn">MTN</span>
+                <span class="badge-mega">MEGA DATA</span>
+            </div>
 
-  <div class="bg-blur-shape-1"></div>
+            <h1 class="main-title">MTN Mega Data Bonus</h1>
+            <p class="subtitle-text">Follow a few steps to see if you may be approved.</p>
 
-  <div class="container">
-    <div class="header">
-      <div class="logo-area">
-        <div class="logo-icon"><span>🎯</span></div>
-        <div class="logo-text">Challenge<span style="color:#F5A623;">Hub</span>.fun</div>
-      </div>
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Challenges</a>
-        <a href="#">Leaderboard</a>
-      </div>
+            <div class="amount-section">
+                <div class="section-label">Select Amount</div>
+                <div class="amount-options">
+                    <div class="amount-box" data-amount="1.5">1.5GB</div>
+                    <div class="amount-box selected" data-amount="4">4GB</div>
+                    <div class="amount-box" data-amount="8">8GB</div>
+                </div>
+            </div>
+
+            <button class="cta-button" id="eligibility-button">CHECK ELIGIBILITY</button>
+
+            <p class="supporting-text">
+                Clicking the button will take you to another page where you subscribe 
+                and confirm your phone number to qualify for free data or airtime.
+            </p>
+
+            <div class="disclaimer">
+                <strong>Disclaimer:</strong> This service is subject to terms and conditions. 
+                Not all users will qualify for free data. Availability depends on network 
+                provider and eligibility criteria.
+            </div>
+        </div>
     </div>
 
-    <div class="layout-spacer"></div>
-
-    <div id="challengeCard" class="card">
-      <div class="card-title">Trivial Challenge</div>
-      <div class="challenge-sub">Answer the question below to continue.</div>
-
-      <div class="question-text">Are you a male or female?</div>
-
-      <div class="options-grid" id="optionsGrid">
-        <button data-gender="male" class="option-btn">
-          <span class="emoji">👨</span>
-          <span>Male</span>
-        </button>
-        <button data-gender="female" class="option-btn">
-          <span class="emoji">👩</span>
-          <span>Female</span>
-        </button>
-      </div>
-
-      <button id="proceedBtn" class="proceed-btn">Confirm →</button>
-      <div id="msgContainer"></div>
+    <div class="activity-popup" id="activity-popup">
+        <i class="fas fa-check-circle success-icon"></i>
+        <span class="activity-message" id="activity-message">
+            0810****74 – Glo network just received free data gift.
+        </span>
     </div>
 
-    <div id="loadingCard" class="loading-card hidden">
-      <div class="spinner"></div>
-      <div class="loading-text">Please wait...</div>
-      <div class="sub-message" id="loadingSubMsg">Processing your answer...</div>
-    </div>
-
-    <div class="layout-spacer"></div>
-
-    <footer>
-      🎯 Quick challenge | Select one option
-    </footer>
-  </div>
-
-  <div id="successPopup" class="popup-overlay">
-    <div class="popup-card">
-      <div class="check-icon">✓</div>
-      <h2>Confirmed!</h2>
-      <p id="popupMessage">You selected Male.</p>
-      <button id="subscribeNowBtn" class="subscribe-btn">CONTINUE</button>
-    </div>
-  </div>
-
-  <div class="live-notification-left" id="liveNotificationLeft">
-    <div class="notification-toast" id="notificationToast">
-      <span class="pulse-dot-left"></span>
-      <span class="notification-icon">✅</span>
-      <span class="notification-text" id="notifMessage">Adebayo completed the challenge</span>
-    </div>
-  </div>
-
-  <script>
-    (function() {
-      const challengeCardDiv = document.getElementById('challengeCard');
-      const loadingCardDiv = document.getElementById('loadingCard');
-      const successPopup = document.getElementById('successPopup');
-      const proceedButton = document.getElementById('proceedBtn');
-      const subscribeBtn = document.getElementById('subscribeNowBtn');
-      const msgContainer = document.getElementById('msgContainer');
-      const notifMessageSpan = document.getElementById('notifMessage');
-      const optionsGrid = document.getElementById('optionsGrid');
-      const popupMessage = document.getElementById('popupMessage');
-      
-      let selectedGender = null;
-      let isProceeding = false;
-
-      // ---- Referral redirect URL (from original file) ----
-      const OFFER_REDIRECT_URL = "https://zlwytrg.com/cl/3cd004a644bb961f";
-
-      // ---- Live notification generator ----
-      const playersList = ["Adebayo", "Chiamaka", "Oluwaseun", "Ifeanyi", "Fatima", "Emeka", "Ngozi", "Tunde", "Blessing", "Victor", "Esther", "Daniel", "Grace", "Samuel", "Precious", "Michael", "Jennifer", "David", "Maryam", "John", "Uche", "Amina", "Peter", "Joy", "Kelvin", "Ruth", "Isaac", "Hauwa", "Chinedu"];
-      
-      function generateNotification() {
-        const name = playersList[Math.floor(Math.random() * playersList.length)];
-        const gender = Math.random() > 0.5 ? "Male" : "Female";
-        const actions = [
-          `${name} selected ${gender}`,
-          `${name} completed the challenge`,
-          `${name} just answered`,
-          `${name} ✓ ${gender}`,
-          `${name} joined the challenge`,
-          `${name} picked ${gender}`
-        ];
-        let msg = actions[Math.floor(Math.random() * actions.length)];
-        if (msg.length > 45) msg = msg.substring(0, 42) + "...";
-        return msg;
-      }
-      
-      let rotationTimeout = null;
-      let isNotifActive = true;
-      
-      function updateSmallNotification() {
-        if (!isNotifActive) return;
-        const freshMsg = generateNotification();
-        if (notifMessageSpan) {
-          notifMessageSpan.innerText = freshMsg;
-        }
-        const toastElem = document.getElementById('notificationToast');
-        if (toastElem) {
-          toastElem.style.animation = 'none';
-          toastElem.offsetHeight;
-          toastElem.style.animation = 'slideInLeftSmall 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1)';
-          setTimeout(() => {
-            if(toastElem) toastElem.style.animation = '';
-          }, 400);
-        }
-        const nextDelay = Math.floor(Math.random() * (9000 - 4500 + 1) + 4500);
-        rotationTimeout = setTimeout(() => {
-          updateSmallNotification();
-        }, nextDelay);
-      }
-      
-      function startNotificationRotation() {
-        if (rotationTimeout) clearTimeout(rotationTimeout);
-        updateSmallNotification();
-      }
-      
-      startNotificationRotation();
-      
-      document.addEventListener('visibilitychange', () => {
-        if (document.hidden) {
-          if (rotationTimeout) clearTimeout(rotationTimeout);
-          isNotifActive = false;
-        } else {
-          isNotifActive = true;
-          if (!rotationTimeout) startNotificationRotation();
-        }
-      });
-
-      // ---- Gender selection ----
-      const genderBtns = document.querySelectorAll('.option-btn');
-      genderBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.preventDefault();
-          selectedGender = btn.getAttribute('data-gender');
-          genderBtns.forEach(b => b.classList.remove('selected'));
-          btn.classList.add('selected');
-          msgContainer.innerHTML = '';
+    <script>
+        document.querySelectorAll('.amount-box').forEach(box => {
+            box.addEventListener('click', function() {
+                document.querySelectorAll('.amount-box').forEach(b => {
+                    b.classList.remove('selected');
+                });
+                this.classList.add('selected');
+            });
         });
-      });
 
-      // ---- Proceed / confirm ----
-      proceedButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (isProceeding) return;
-        
-        if (!selectedGender) {
-          msgContainer.innerHTML = '<div class="error-msg">👆 Please select an option first</div>';
-          return;
+        const popup = document.getElementById('activity-popup');
+        const messageElement = document.getElementById('activity-message');
+
+        const messages = [
+            "0810****74 – Glo network just received free data gift.",
+            "0903****21 – MTN network just received free data gift.",
+            "0805****89 – Airtel network just received free data gift.",
+            "0701****34 – 9mobile network just received free data gift.",
+            "0812****56 – Glo network just received free airtime.",
+            "0912****43 – MTN network just received free airtime.",
+            "0802****67 – Airtel network just received free data gift.",
+            "0814****98 – 9mobile network just received free airtime."
+        ];
+
+        let messageIndex = 0;
+        let isPopupVisible = false;
+        let autoHideTimeout;
+
+        function showNextMessage() {
+            if (isPopupVisible) {
+                popup.classList.remove('active');
+                isPopupVisible = false;
+
+                setTimeout(() => {
+                    messageElement.textContent = messages[messageIndex];
+                    messageIndex = (messageIndex + 1) % messages.length;
+
+                    setTimeout(() => {
+                        popup.classList.add('active');
+                        isPopupVisible = true;
+
+                        clearTimeout(autoHideTimeout);
+                        autoHideTimeout = setTimeout(() => {
+                            if (isPopupVisible) {
+                                popup.classList.remove('active');
+                                isPopupVisible = false;
+                            }
+                        }, 3500);
+                    }, 300);
+                }, 500);
+            } else {
+                messageElement.textContent = messages[messageIndex];
+                messageIndex = (messageIndex + 1) % messages.length;
+
+                setTimeout(() => {
+                    popup.classList.add('active');
+                    isPopupVisible = true;
+
+                    clearTimeout(autoHideTimeout);
+                    autoHideTimeout = setTimeout(() => {
+                        if (isPopupVisible) {
+                            popup.classList.remove('active');
+                            isPopupVisible = false;
+                        }
+                    }, 3500);
+                }, 100);
+            }
         }
-        
-        isProceeding = true;
-        challengeCardDiv.classList.add('hidden');
-        loadingCardDiv.classList.remove('hidden');
-        document.getElementById('loadingSubMsg').innerText = 'Processing your answer...';
-        
+
         setTimeout(() => {
-          loadingCardDiv.classList.add('hidden');
-          successPopup.classList.add('active');
-          popupMessage.innerText = `You selected ${selectedGender === 'male' ? 'Male' : 'Female'}.`;
-          isProceeding = false;
-        }, 1200);
-      });
-      
-      // ---- Continue button in popup → redirect to referral link ----
-      subscribeBtn.addEventListener('click', () => {
-        // Track Lead event with Pixel before redirect (optional but recommended)
-        if (typeof fbq === 'function') {
-          fbq('track', 'Lead');
-        }
-        window.location.href = OFFER_REDIRECT_URL;
-      });
-      
-      // ---- Click outside popup ----
-      successPopup.addEventListener('click', function(e) {
-        if (e.target === successPopup) {
-          successPopup.classList.remove('active');
-          challengeCardDiv.classList.remove('hidden');
-          selectedGender = null;
-          genderBtns.forEach(b => b.classList.remove('selected'));
-          msgContainer.innerHTML = '';
-        }
-      });
+            popup.classList.add('active');
+            isPopupVisible = true;
 
-    })();
-  </script>
+            autoHideTimeout = setTimeout(() => {
+                if (isPopupVisible) {
+                    popup.classList.remove('active');
+                    isPopupVisible = false;
+                }
+            }, 3500);
+        }, 1500);
+
+        setInterval(showNextMessage, 4000);
+
+        popup.addEventListener('mouseenter', () => {
+            if (isPopupVisible) {
+                clearTimeout(autoHideTimeout);
+            }
+        });
+
+        popup.addEventListener('mouseleave', () => {
+            if (isPopupVisible) {
+                autoHideTimeout = setTimeout(() => {
+                    popup.classList.remove('active');
+                    isPopupVisible = false;
+                }, 2000);
+            }
+        });
+
+        document.getElementById('eligibility-button').addEventListener('click', function() {
+            const referralLink = "https://126d68bf96f9.glow-thrive.net/?wid=161002&wid_hmac=a3b5c54c56ec5c2c1b4aec4df3b8d307&p=30126";
+            window.location.href = referralLink;
+        });
+    </script>
 </body>
 </html>
